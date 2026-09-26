@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+TOPIC="DEFAULT_TOPIC"
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+pkill ft_lock
+pkill -f countdown.sh
+
+ft_lock &
+
+curl -d "Your session was locked !" "ntfy.sh/$TOPIC" &> /dev/null
+
+nohup "$DIR/countdown.sh" >/dev/null 2>&1 &
+
+exit 0

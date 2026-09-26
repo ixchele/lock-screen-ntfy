@@ -1,0 +1,8 @@
+{
+  "name": "lock-screen-ntfy",
+  "description": "Wrapper for ft_lock command to notify user",
+  "uuid": "lock-screen-ntfy@ixchele.github.io",
+  "shell-version": [
+    "42"
+  ]
+}
