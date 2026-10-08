@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-TOPIC="test_zakaria_123"
+TOPIC="DEFAULT_TOPIC"
 
 echo "countdown started" >> /tmp/debug_lock.log
 for (( i=36*60; i > 0; i-- )); do
